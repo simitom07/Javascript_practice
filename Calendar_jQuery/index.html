@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" type="text/javascript"></script>
+        <link href="style.css" rel="stylesheet"/>
+        <script src="index.js" type="text/javascript"></script>
+        <title>Calendar JQuery   </title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">&nbsp;</div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        &nbsp;
+                    </div>
+                    <div class="col-sm-8" style="border: 5px ridge #e6ccff">
+                        <div>&nbsp;</div>
+                            <div class="month font-weight-bold" id="month"> 
+                                <ul>
+                                    <li class="prev" id="prev" value="6" onclick="MonthChange(-1)">&#10094&#10094;</li>
+                                    <li class="next" id="next" value="6" onclick="MonthChange(+1)">&#10095&#10095;</li>
+                                    <li id="monthName"></li>
+                                    <!-- <li id="monthName" value="6">July<br><span style="font-size:18px" id="yearName">2018</span></li> -->
+                                </ul>
+                            </div>                            
+                                <ul class="weekdays font-weight-bold" id="weekdays"></ul>
+                                <ul class="days" id="days"></ul>
+                            <div class="row">&nbsp;</div>
+                    </div>
+                    <div class="col-sm-2"></div>
+                    <div id="test"></div>
+                </div>
+        </div>
+    </body>
+</html>
